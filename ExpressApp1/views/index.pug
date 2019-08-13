@@ -1,0 +1,26 @@
+﻿extends layout
+
+
+block content        
+    div.container  <!-- express template 流儀の書き方。これで class="container" というCSSのスタイルが充たる。そして、インデントがDOMの入れ子階層を表す -->
+        form(method='POST' action='./')
+            div     <!-- これで div タグを切る -->
+                .row    <!-- これで div タグに row スタイルを充てる -->
+                    .col-sm-4           <!-- div タグに col-sm-4 スタイルを充てて、その中にh2タグを切る -->
+                        h2= message1       
+                    .col-sm-4           <!-- div タグに col-sm-4 スタイルを充てて、その中にh2タグを切る -->
+                        input(type="text", name="message1")
+                    .col-sm-4           <!-- div タグに col-sm-4 スタイルを充てて、その中にh2タグを切る -->
+                        input(type="submit", value="click!")
+            <!-- 所謂 HTMLの書き方(↑と同じものをHTMLで記述) -->
+            <div class="row">
+                <div class="col-sm-4">
+                    <h2 >#{message2}</h2>
+                </div>            
+                <div class="col-sm-4">
+                    <input type="text" name=message2></input>
+                </div>
+                <div class="col-sm-4">
+                    <input type="submit" value="click!"></input>
+                </div>
+            </div>

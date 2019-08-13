@@ -21,3 +21,10 @@ $RECYCLE.BIN/
 # =========================
 # Operating System Files
 # =========================
+
+
+
+node_modules/
+.vs/ExpressApp1/v16/.suo
+ExpressApp1/obj/Debug/ExpressApp1.njsproj.FileListAbsolute.txt
+ExpressApp1/ExpressApp1.njsproj.user
